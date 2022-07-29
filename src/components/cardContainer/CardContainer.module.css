@@ -1,0 +1,33 @@
+
+.container {
+
+  padding: 5% 20%;
+}
+
+.container h1, b {
+  text-align: center;
+  display: block;
+}
+
+.container .cards {
+  margin-top: 4%;
+
+}
+
+.container footer {
+  padding: 3% 15%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container button {
+  display: block;
+  height: 40px;
+  outline: 0;
+  border: 0;
+  background: darkblue;
+  color: white;
+  font-size: 1.2em;
+  width: 50%;
+  margin: 0 auto;
+}
