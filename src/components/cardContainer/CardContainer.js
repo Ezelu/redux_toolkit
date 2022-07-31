@@ -2,6 +2,7 @@ import React from 'react';
 import CardItem from '../cardItem/CardItem';
 import { useSelector } from 'react-redux';
 import styles from './CardContainer.module.css';
+import Modal from '../Modal';
 
 
 const CardContainer = () => {
@@ -30,10 +31,11 @@ const CardContainer = () => {
 
       <footer>
         <h3> Total </h3>
-        <h3> ${total} </h3>  
+        <h3> ${total.toFixed(2)} </h3>  
       </footer>
 
-      <button> Clear Cart </button> 
+      {/* <button className={styles.btn} onClick={() => dispatch(clearCart())}> Clear Cart </button>  */}
+      <Modal className={styles.btn}/>
     </div>
   )
 }

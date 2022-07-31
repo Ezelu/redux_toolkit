@@ -20,14 +20,23 @@
   justify-content: space-between;
 }
 
-.container button {
+.container .btn {
   display: block;
   height: 40px;
   outline: 0;
   border: 0;
   background: darkblue;
+  border: 2px solid transparent;
   color: white;
   font-size: 1.2em;
   width: 50%;
-  margin: 0 auto;
+  margin: 0 25%;
+  cursor: pointer;
+  transition: background 0.5s ease, color 0.5s ease;
+}
+
+.container .btn:hover {
+  background: transparent;
+  color: darkblue;
+  border: 2px solid darkblue;
 }
